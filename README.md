@@ -7,34 +7,42 @@
 项目结构:
 ---------------
 
-> ├── app.js            项目入口文件
-├── app               MVC文件目录
-│   ├── controllers   控制器目录
-│   │   ├── category.js 
-│   │   ├── comment.js 
-│   │   ├── index.js
-│   │   ├── movie.js
-│   │   └── user.js
-│   ├── models      模型目录
-│   │   ├── category.js 
-│   │   ├── comment.js 
-│   │   ├── movie.js 
-│   │   └── user
-│   ├── schemas       模式目录
-│   │   ├── category.js 
-│   │   ├── comment.js 
-│   │   ├── movie.js 
-│   │   └── user.js
-│   └── views         视图文件目录
-│       ├── includes
-│       └── pages
-├── config               路由配置文件目录
-│       └── routes.js
-├── node_modules      node模块目录（需根据package重新安装）
-├── public            静态公共文件目录
-│   ├── js        JS脚本目录
-│   ├── libs      （bower安装bootstrap&jQuery的目录，需安装）
-│   └── upload        用户自定义上传图片存储目录
-├── README.md
-├── bower.js     静态资源版本
-└── package.json
+> ├── app.js            项目入口文件<br />
+│<br />
+├── app               MVC文件目录<br />
+│   ├── controllers   控制器目录<br />
+│   │   ├── category.js <br />
+│   │   ├── comment.js <br />
+│   │   ├── index.js <br />
+│   │   ├── movie.js <br />
+│   │   └── user.js <br />
+│   │ <br />
+│   ├── models      模型目录 <br />
+│   │   ├── category.js  <br />
+│   │   ├── comment.js  <br />
+│   │   ├── movie.js  <br />
+│   │   └── user <br />
+│   │
+│   ├── schemas       模式目录 <br />
+│   │   ├── category.js  <br />
+│   │   ├── comment.js  <br />
+│   │   ├── movie.js  <br />
+│   │   └── user.js <br />
+│   │
+│   └── views         视图文件目录 <br />
+│       ├── includes <br />
+│       └── pages <br />
+│
+├── config               路由配置文件目录 <br />
+│       └── routes.js <br />
+│ <br />
+├── node_modules      node模块目录（需根据package重新安装） <br />
+│ <br />
+├── public            静态公共文件目录 <br />
+│   ├── js        JS脚本目录 <br />
+│   ├── libs      （bower安装bootstrap&jQuery的目录，需安装） <br />
+│   └── upload        用户自定义上传图片存储目录 <br />
+│ <br />
+├── README.md <br />
+├── bower.js     静态资源版本 <br />
+└── package.json <br />
