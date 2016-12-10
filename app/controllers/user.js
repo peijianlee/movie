@@ -7,8 +7,12 @@ exports.showSignup = function(req, res){
 	})
 }
 exports.showSignin = function(req, res){
+	var name = req.query.name
+	var password = req.query.password
 	res.render('signin',{
-		title: '登录页面'
+		title: '登录页面',
+		name: name,
+		password: password
 	})
 }
 // signup
@@ -22,7 +26,7 @@ exports.signup = function(req, res){
 
 		if(user){
 			console.log('用户名已经存在')
-			return res.redirect('/signin')
+			return res.redirect('/signin?name='+user.name)
 		}else{
 			var user = new User(_user)
 
@@ -60,7 +64,7 @@ exports.signin = function(req, res){
 				return res.redirect('/')
 			}else{
 				console.log('Password is not matched')
-				return res.redirect('/signin')
+				return res.redirect('/signin?name='+name+'&password=notmatched')
 			}
 		})
 	})
